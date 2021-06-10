@@ -6,7 +6,7 @@ stages{
     sh '/opt/bitnami/jenkins/jenkins_home/workspace/ clean install'
     }
     stage('Test'){
-      step{
+      steps{
       sh '/opt/bitnami/jenkins/jenkins_home/workspace/ test'
       }
     }
